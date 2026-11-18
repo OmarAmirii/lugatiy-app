@@ -46,3 +46,7 @@ Een browser moet de PDF ontvangen om deze te kunnen weergeven: autorisatie voork
 Beheerders kunnen onder `/beheer` MP4-bestanden van maximaal 500 MB uploaden, aan series koppelen en afzonderlijk publiceren. Zowel de aflevering als de serie moet gepubliceerd zijn voor bezoekers. Onder `/videos` kunnen ingelogde gebruikers video’s bekijken; kijkposities worden per account opgeslagen en bytebereiken worden ondersteund. Bestanden staan in `STORAGE_PATH/videos`, buiten PostgreSQL. Neem deze map op in de back-up. De uploadcontrole controleert de hoofdstructuur van de MP4-container, maar controleert niet of codecs en alle mediadata geldig of veilig zijn. Ondertiteling, transcodering, HLS, miniaturen en volledig seriebeheer ontbreken. Het afspelen is nog niet met een echte video in een browser getest.
 
 Beheerders kunnen accounts voor de vier rollen aanmaken en uitschakelen. Gebruikers kunnen onder `/account` hun wachtwoord wijzigen en uitloggen. Uitschakelen en wachtwoordwijzigingen trekken bestaande sessies in. Relaties tussen leerlingen en ouders/docenten en hun toegangsregels zijn nog niet geïmplementeerd.
+
+## Toegang voor bezoekers
+
+De startpagina en het woordenboek zijn openbaar. Voor werkwoorden, woordkaarten, oefeningen, boeken, videolessen en persoonlijke gegevens is een account nodig. De overeenkomstige gegevens-API's vereisen eveneens authenticatie. Links in de navigatie blijven zichtbaar zodat bezoekers de leeromgeving kunnen ontdekken; beschermde schermen vragen eerst om aanmelding.
