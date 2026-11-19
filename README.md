@@ -50,3 +50,5 @@ Beheerders kunnen accounts voor de vier rollen aanmaken en uitschakelen. Gebruik
 ## Toegang voor bezoekers
 
 De startpagina en het woordenboek zijn openbaar. Voor werkwoorden, woordkaarten, oefeningen, boeken, videolessen en persoonlijke gegevens is een account nodig. De overeenkomstige gegevens-API's vereisen eveneens authenticatie. Links in de navigatie blijven zichtbaar zodat bezoekers de leeromgeving kunnen ontdekken; beschermde schermen vragen eerst om aanmelding.
+
+Bij het uploaden van boeken en video's kan een beheerder een bestand kiezen of slepen. Via **URL** kan ook een directe HTTPS-link naar een PDF of MP4 worden gebruikt. De browser haalt het bestand zonder inloggegevens op en uploadt het daarna naar Lugatiy; de link wordt dus niet als externe videobron opgeslagen. De bron moet browsertoegang (CORS) toestaan en direct het bestand leveren, zonder omleiding. Links naar afspeelpagina's en bronnen die browsertoegang blokkeren werken niet; download in dat geval het bestand en upload het handmatig.
